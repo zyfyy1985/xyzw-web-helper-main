@@ -14,7 +14,7 @@
 
     <!-- 二维码显示区域 -->
     <div class="qrcode-container">
-      <div v-if="!qrcodeUrl" id="qr-placeholder" class="qr-placeholder" @click="generateQRCode">
+      <div v-if="!qrcodeUrl" id="qr-placeholder" class="qr-placeholder">
         <n-icon size="48" color="var(--text-tertiary)">
           <Scan />
           <!-- 使用扫码图标 -->
