@@ -31,7 +31,7 @@
 
     <!-- 操作按钮 -->
     <div class="form-actions">
-      <n-button type="primary" block @click="generateQRCode" :loading="isProcessing">
+      <n-button type="primary"  :loading="isProcessing">
         <template #icon>
           <n-icon>
             <Refresh />
