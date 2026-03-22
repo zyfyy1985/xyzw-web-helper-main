@@ -3685,6 +3685,8 @@ onMounted(() => {
   // Start countdown timer
   startCountdown();
   loadTaskTemplates();
+  window.executeScheduledTask = executeScheduledTask;
+  window.scheduledTasks = () => scheduledTasks.value;
 });
 
 // Cleanup countdown interval on unmount
