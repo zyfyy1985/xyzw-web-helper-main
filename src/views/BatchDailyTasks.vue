@@ -3688,7 +3688,7 @@ onMounted(() => {
   window.executeScheduledTask = executeScheduledTask;
   window.scheduledTasks = () => scheduledTasks.value;
   window.clearLogs = clearLogs;
-  window.getLogs = logs.value;
+  window.getLogs = () => logs.value;
 });
 
 // Cleanup countdown interval on unmount
