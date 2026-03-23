@@ -2307,7 +2307,7 @@ import {
   nextTick,
   reactive,
   watch,
-  onMounted,
+  ounted,
   onBeforeUnmount,
   h,
 } from "vue";
@@ -3687,6 +3687,8 @@ onMounted(() => {
   loadTaskTemplates();
   window.executeScheduledTask = executeScheduledTask;
   window.scheduledTasks = () => scheduledTasks.value;
+  window.clearLogs = clearLogs;
+  window.getLogs = logs.value;
 });
 
 // Cleanup countdown interval on unmount
